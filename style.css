@@ -1,3 +1,9 @@
+:root{
+    --borda: 1px solid #000;
+
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -6,23 +12,72 @@
 body{
     color:#F8FAFC;
     display: flex;
-    flex-direction: row;
-}
-main{
-    display: flex;
     flex-direction: column;
-    width: 100%;
 }
-.side{
-    border: 2px solid #000;
+/* HEADER LOGO, DROPDOWN , ALARM & PERFIL */
+header{
+    border: var(--borda);
+    height: 60px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
 }
 .logo{
     width:150px;
-    height:75px;
+    height:60px;
     overflow: hidden;
 }
 .logo img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.cabeca-direita{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+padding: 10px;
+}
+.icones{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+select{
+    font-size: 30px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.side{
+    border: var(--borda);
+    width: 100px;
+    height: 90vh;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+}
+.side a:active{
+    background-color: #0077ff;
+    border-radius: 10px;
+}
+.fa-solid{
+    color: #000000;
+    font-size: 40px;
+}
+
+
+
+/* CORPO COM O CONTEUDO */
+
+.corpo{
+    width: 100vw;
+    border: var(--borda);
 }
