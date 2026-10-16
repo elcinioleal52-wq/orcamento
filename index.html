@@ -1,58 +1,200 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./img/Group 4.png" type="image/png" />
 
-    <title>Document</title>
-  </head>
 
-  <body>
-    <header>
-      <div class="logo">
-        <img src="./img/Group 4.png" alt="logo" />
+  <!--link do css-->
+  <link rel="stylesheet" href="./style.css" />
+
+  <!--link do bootstrap-->
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <!--link do font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="./img/Group 4.png" alt="logo" />
+    </div>
+    <div class="cabeca-direita">
+      <select>
+        <option value="1">Hoje</option>
+        <option value="2">Ontem</option>
+        <option value="3">Esta semana</option>
+        <option value="4">Este mês</option>
+      </select>
+      <div class="icones">
+        <a href="#"><i class="fa-solid fa-bell"></i></a>
+        <a href="#"><i class="fa-solid fa-circle-user"></i></a>
       </div>
-      <div class="cabeca-direita">
+    </div>
+  </header>
+  <main>
+    <aside class="side">
+      <a href="#"><i class="fa-solid fa-house"></i></a>
+      <a href=""><i class="fa-solid fa-money-bill-trend-up"></i></a>
+      <a href=""><i class="fa-solid fa-wallet"></i></a>
+      <a href=""><i class="fa-solid fa-crosshairs"></i></a>
+      <a href=""><i class="fa-solid fa-chart-column"></i></a>
+      <a href=""><i class="fa-solid fa-gear"></i></a>
+      <a href=""><i class="fa-solid fa-circle-user"></i></a>
+    </aside>
+    <section class="corpo">
+      <!-- Inicio dos cards-->
+      <div class="cards">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="title-card">
+            <i class="fa-solid fa-wallet"><span> Saldo disponivel</span></i>
+          </div>
+          <div class="content-cards"><span>0.000.00 Kz</span></div>
+          <div class="footer-card">
+            <i class="fa-solid fa-arrow-up"></i>
+            <span>0% em relação ao mês passado</span>
+          </div>
+        </div>
 
-        <select>
-          <option value="1">Hoje</option>
-          <option value="2">Ontem</option>
-          <option value="3">Esta semana</option>
-          <option value="4">Este mês</option>
-        </select>
-        <div class="icones">
-          <a href="#"><i class="fa-solid fa-bell"></i></a>
-          <a href="#"><i class="fa-solid fa-circle-user"></i></a>
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="title-card">
+            <i class="fa-solid fa-wallet"><span> Saldo disponivel</span></i>
+          </div>
+          <div class="content-cards"><span>0.000.00 Kz</span></div>
+          <div class="footer-card">
+            <i class="fa-solid fa-arrow-up"></i>
+            <span>0% em relação ao mês passado</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="title-card">
+            <i class="fa-solid fa-wallet"><span> Saldo disponivel</span></i>
+          </div>
+          <div class="content-cards"><span>0.000.00 Kz</span></div>
+          <div class="footer-card">
+            <i class="fa-solid fa-arrow-up"></i>
+            <span>0% em relação ao mês passado</span>
+          </div>
+        </div>
+
+
+        <!-- Card 4 -->
+
+        <div class="card">
+          <div class="title-card">
+            <i class="fa-solid fa-wallet"><span> Saldo disponivel</span></i>
+          </div>
+          <div class="content-cards"><span>0.000.00 Kz</span></div>
+          <div class="footer-card">
+            <i class="fa-solid fa-arrow-up"></i>
+            <span>0% em relação ao mês passado</span>
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- Fim dos cards-->
+
+      <!--Card metas-->
+      <div class="metas">
+      <div class="card-metas">
+        <div class="title-card">
+          <div class="text-title"><i class="fa-solid fa-crosshairs"></i> Metas</div>
+          <div class="money-title">
+            <span>0.000.00 Kz</span>
+          </div>
+        </div>
+
+        <div class="content-cards">
+
+          <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+            aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%">80%</div>
+          </div>
+        </div>
+
+        <div class="footer-card">
+        <span>Faltam 50.000, 00 Kz para comprar o seu computador</span>
+      </div>
+
+      </div>
+<!--Outra meta-->
+
+      <div class="card-metas">
+        <div class="title-card">
+          <div class="text-title"><i class="fa-solid fa-crosshairs"></i> Metas</div>
+          <div class="money-title">
+            <span>0.000.00 Kz</span>
+          </div>
+        </div>
+
+        <div class="content-cards">
+
+          <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+            aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%">80%</div>
+          </div>
+        </div>
+
+        <div class="footer-card">
+        <span>Faltam 50.000, 00 Kz para comprar o seu computador</span>
+      </div>
+
+      </div>
+      </div>
+      
+<!--Fim do card metas-->
+      
+
+      <!--Transações recentes-->
+      <div class="trans-principal">
+        <div class="title">
+          <div class="text-title">
+            <span><i class="fa-solid fa-money-bill-transfer"></i> Transações Recentes</span>
+          </div>
+
+          <div class="ver-mais">
+            <a href="#">Ver todos</a>
+          </div>
+
+        </div>
+
+        <div class="content">
+          <div class="icones-t">
+            <i class="fa-solid fa-taxi"></i>
+          </div>
+          <div class="text-t">
+            <span>Taxi</span>
+            <span class="descricao">
+              <span class="data">00/00/00</span>
+              <span class="tipo">Transporte</span>
+            </span>
+          </div>
+          <div class="preco-t">
+            <span>-2.000 ,00 Kz </span>
+          </div>
         </div>
       </div>
-    </header>
-    <main>
-      <section class="side">
-        <a href="#"><i class="fa-solid fa-house"></i></a>
-        <a href=""><i class="fa-solid fa-money-bill-trend-up"></i></a>
-        <a href=""><i class="fa-solid fa-wallet"></i></a>
-        <a href=""><i class="fa-solid fa-crosshairs"></i></a>
-        <a href=""><i class="fa-solid fa-chart-column"></i></a>
-        <a href=""><i class="fa-solid fa-gear"></i></a>
-        <a href=""><i class="fa-solid fa-circle-user"></i></a>
-      </section>
-      <section class="corpo">
-<div class="card">
-  
-</div>
 
+    </section>
+  </main>
+</body>
 
-
-
-
-
-      </section>
-    </main>
-  </body>
 </html>
